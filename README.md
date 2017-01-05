@@ -1,4 +1,4 @@
-# WDI Project #2: [ Meet ] in the Middle
+# [ Meet ] in the Middle
 
 
 ## Overview
@@ -8,14 +8,12 @@ Users can select from a range of options, enter multple locations, and filter re
 
 Try it out [here] (https://in-the-middle.herokuapp.com).
 
-## Contribtors
-* [Curtis Osano] ()
-* [Elliot Mountford-Brock] () 
-* [Caroline Wilson] ()
+### Contribtors
+* [Curtis Osano] (https://github.com/Osanocurt)
+* [Elliot Mountford-Brock] (https://github.com/Ellmo304) 
+* [Caroline Wilson] (https://github.com/carolinewilson)
 
-
-
-## Screenshot
+![Meet in the Middle](https://in-the-middle.herokuapp.com/images/meet-in-the-middle.png)
 
 
 
@@ -34,8 +32,6 @@ Built as a group project, the objective of this project was to design, scope and
 * Node.js
 * Google Maps API
 * Google Places Library
-* Git
-* Heroku  
 
 
 
@@ -54,6 +50,3 @@ Built as a group project, the objective of this project was to design, scope and
 * Enable users to share directions with friends via social sharing options.
 * Allow users to move the central point marker, should they so wish, to deliver nearby results for a location of their choosing. 
 * Re-write using a framework such as AngularJS to better handle transition of states.
-
-## Known Bugs/Issues
-* 
