@@ -13,7 +13,7 @@ Try it out [here] (https://in-the-middle.herokuapp.com).
 * [Elliot Mountford-Brock] (https://github.com/Ellmo304) 
 * [Caroline Wilson] (https://github.com/carolinewilson)
 
-![Meet in the Middle](https://in-the-middle.herokuapp.com/images/meet-in-the-middle.png)
+![Meet in the Middle](http://meet-in-the-middle-cw.herokuapp.com/images/meet-in-the-middle.png)
 
 
 
