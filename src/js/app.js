@@ -752,46 +752,46 @@ let mapStyle = [
 
   function showResourceForm(){
     $main.prepend(`
-
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link" id="resource" data-id='restaurant'>Restaurant</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="resource" data-id='bar'>Bar</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="resource" data-id='cafe'>Cafe</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="resource" data-id='casino'>Casino</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="resource" data-id='night_club'>Night Club</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="resource" data-id='movie_theater'>Theater</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="resource" data-id='shopping_mall'>Shopping</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="resource" data-id='clothing_store'>Clothes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="resource" data-id='florist'>Florist</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="resource" data-id='zoo'>Zoo</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="resource" data-id='spa'>Spa</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="resource" data-id='gym'>Gym</a>
-        </li>
-      </ul>
-
+      <div class="resource-options">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" id="resource" data-id='restaurant'>Restaurant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="resource" data-id='bar'>Bar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="resource" data-id='cafe'>Cafe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="resource" data-id='casino'>Casino</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="resource" data-id='night_club'>Night Club</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="resource" data-id='movie_theater'>Theater</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="resource" data-id='shopping_mall'>Shopping</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="resource" data-id='clothing_store'>Clothes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="resource" data-id='florist'>Florist</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="resource" data-id='zoo'>Zoo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="resource" data-id='spa'>Spa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="resource" data-id='gym'>Gym</a>
+          </li>
+        </ul>
+      </div>
 
       <div class="dropdown open nav-tabs-mobile">
         <a class="btn btn-secondary dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -1120,9 +1120,9 @@ let mapStyle = [
           <h6>${venue.name}</h6>
           <p>${venue.vicinity}</p>
           <p>${ratingHtml}${priceHtml}</p>
-          </div>
-          <div id="imageContainer" style="background-image: url('${imgSrc}')"></div></a>
           <button class="directionButton btn btn-primary" data-lat=${lat} data-lng=${lng}>Directions</button>
+        </div>
+        <div id="imageContainer" style="background-image: url('${imgSrc}')"></div></a>
         </div>
         <hr>`);
         uniqueId ++;

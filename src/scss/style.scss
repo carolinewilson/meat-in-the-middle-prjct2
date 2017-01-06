@@ -10,6 +10,9 @@ body, html {
   }
 }
 
+button:focus {
+  outline: none;
+}
 .errorMessage {
   background-color: $brand-pink;
   color: $brand-grey;
@@ -19,11 +22,9 @@ body, html {
   width: 100%;
 }
 #map {
-
   height: 87vh;
   display: inline-block;
   border: 2px solid lightgrey;
-  // border-radius: 5px;
 }
 
 #travelModeDiv {
@@ -35,8 +36,6 @@ body, html {
   text-align: center;
   padding-left: 10px;
   border: 2px solid lightgrey;
-  // box-shadow: -5px 0px 5px #888888;
-  // border-radius: 5px;
   margin-right: -5px;
 }
 
@@ -47,8 +46,6 @@ body, html {
   float: right;
   overflow: auto;
   border: 2px solid lightgrey;
-  // box-shadow: -5px 0px 5px #888888;
-  // border-radius: 5px;
   margin-right: -5px;
 
   .carousel-custom {
@@ -120,7 +117,6 @@ body, html {
   }
 
   #profile {
-
     button {
       margin: 10px 0;
       width: 100px;
@@ -144,7 +140,6 @@ body, html {
    color: black;
    border: 5px solid blue;
    border: 2px solid lightgrey;
-  //  border-radius: 5px;
    margin-right: -5px;
 }
 
@@ -160,7 +155,6 @@ body, html {
    margin: 10px auto;
    width: 100%;
 }
-
 
 .priceLevel{
   width: 15px;
@@ -314,7 +308,6 @@ a, #placesItem a, #friendCarouselDiv h4 {
       padding-bottom: 30px;
     }
     .card {
-      // height: 200px;
       margin: 0 0 20px 0;
       border: none;
 
@@ -367,20 +360,87 @@ a, #placesItem a, #friendCarouselDiv h4 {
 .nav-tabs-mobile {
   display: none;
 }
-button:focus {
-  outline: none;
-}
 
-@media (max-width: 880px) {
+@media screen and (max-width: 880px) {
   h1 {
     font-size: 2.5rem;
   }
   h2 {
     font-size: 2rem;
   }
+  #map {
+    height: 300px;
+    width: 100%;
+  }
+  #sidePanel {
+    width: 100%;
+    text-align: center;
+    border: none;
+    .form-panel {
+      .card-block {
+        .btn {
+          width: 94%;
+          float: none;
+        }
+      }
+    }
+  }
+  #imageContainer {
+    width: 50%;
+  }
+  #carousel-custom {
+    width: 90%;
+    margin: 10 auto;
+  }
+  #filter {
+    text-align: center;
+  }
+  #clearFilterResults {
+    width: 200px;
+    margin-left: 30px;
+  }
+  #filterResultsBtn {
+    width: 200px;
+  }
+  #placesItem {
+    .textContainer {
+      width: 100%;
+      word-break: normal;
+    }
+  }
+  #travelModeDiv, #friendCarouselDiv {
+    border: none;
+    width: 100%;
+  }
+  .adp-directions {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .directionButton {
+    width: 200px;
+  }
   .nav-tabs {
     display: none;
-
+  }
+  .resource-options {
+    display: none;
+  }
+  .camelCase {
+    margin-top: -30px;
+  }
+  .cards-block {
+    position: relative;
+    top: 15px;
+  }
+  .landing-header {
+    padding-bottom: 0;
+  }
+  .navbar-toggler {
+    color: white;
+    border: none;
+  }
+  .hidden-sm-up{
+    width: 0;
   }
   .nav-tabs-mobile {
     display: block;
@@ -409,18 +469,27 @@ button:focus {
   h2 {
     font-size: 1.5rem;
   }
-  .camelCase {
-    margin-top: -30px;
+  button {
+    width: 100%;
   }
-  .cards-block {
-    position: relative;
-    top: 15px;
+  #map {
+    height: 250px;
   }
-  .landing-header {
-    padding-bottom: 0;
+  #imageContainer {
+    width: 100%;
   }
-  .navbar-toggler {
-    color: white;
-    border: none;
+  #clearFilterResults, #filterResultsBtn {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  #travelModeDiv {
+    width: 230px;
+    float: left;
+    transform: translateX(40%);
+  }
+  #friendCarouselDiv {
+    width: 90%;
+    float: left;
+    padding-left: 0;
   }
 }
