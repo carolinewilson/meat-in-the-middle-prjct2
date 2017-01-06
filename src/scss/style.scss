@@ -216,7 +216,7 @@ a, #placesItem a, #friendCarouselDiv h4 {
 .navbar {
   border-radius: 0;
   font-family: 'Inconsolata', monospace;
-
+  z-index: 11;
   .right {
     float: right;
   }
@@ -308,6 +308,11 @@ a, #placesItem a, #friendCarouselDiv h4 {
     .camelCase {
       text-transform: capitalize;
     }
+    .landing-header {
+      position: relative;
+      top: 30px;
+      padding-bottom: 30px;
+    }
     .card {
       // height: 200px;
       margin: 0 0 20px 0;
@@ -327,7 +332,15 @@ a, #placesItem a, #friendCarouselDiv h4 {
         padding: 10px;
       }
       .card-block {
-        padding: 0 0 20px;
+        padding: 0;
+      }
+      .navbar {
+        @media screen and (max-width: 480px) {
+          min-height: 70px;
+          h4 {
+            transform: translateY(-20%);
+          }
+        }
       }
     }
 
@@ -354,8 +367,17 @@ a, #placesItem a, #friendCarouselDiv h4 {
 .nav-tabs-mobile {
   display: none;
 }
+button:focus {
+  outline: none;
+}
 
 @media (max-width: 880px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
   .nav-tabs {
     display: none;
 
@@ -377,5 +399,28 @@ a, #placesItem a, #friendCarouselDiv h4 {
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .camelCase {
+    margin-top: -30px;
+  }
+  .cards-block {
+    position: relative;
+    top: 15px;
+  }
+  .landing-header {
+    padding-bottom: 0;
+  }
+  .navbar-toggler {
+    color: white;
+    border: none;
   }
 }

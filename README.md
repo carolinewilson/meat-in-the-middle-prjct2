@@ -6,12 +6,14 @@
 
 Users can select from a range of options, enter multple locations, and filter results to find their ideal match. Locations can even be saved for faster use next time. 
 
-Try it out [here] (https://in-the-middle.herokuapp.com).
+Try it out [here] (http://meet-in-the-middle-cw.herokuapp.com).
 
 ### Contribtors
 * [Curtis Osano] (https://github.com/Osanocurt)
 * [Elliot Mountford-Brock] (https://github.com/Ellmo304) 
 * [Caroline Wilson] (https://github.com/carolinewilson)
+
+This repo has been forked from the group version. You can view the code base for the original group verion [here](https://github.com/Osanocurt/meat-in-the-middle-prjct2) & the hosted app [here](https://in-the-middle.herokuapp.com).
 
 ![Meet in the Middle](http://meet-in-the-middle-cw.herokuapp.com/images/meet-in-the-middle.png)
 

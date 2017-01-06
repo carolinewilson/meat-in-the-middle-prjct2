@@ -151,7 +151,7 @@ $(() =>{
       <nav class="navbar navbar-dark bg-inverse">
         <div class="container">
           <a class="navbar-brand" href="/">[ ${displayText} ] in the middle</a>
-          <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="right navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
             &#9776;
           </button>
           <div class="collapse right navbar-toggleable-xs" id="exCollapsingNavbar2">
@@ -236,46 +236,76 @@ $(() =>{
     $landing.html(`
       <div class="content">
         <div class="wrapper">
-          <h1 class="camelCase">${welcomeMessage}</h1>
-          <h2>What are you in the mood for?</h2>
-          <div class="row">
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-                <div class="card-block">
-                  <h4 class="card-title">Eating & Drinking</h4>
-                  <button id="resource" class="btn btn-secondary" data-id='restaurant'>Restaurant</button>
-                  <button id="resource" class="btn btn-secondary" data-id='bar'>Bar</button>
-                  <button id="resource" class="btn btn-secondary" data-id='cafe'>Cafe</button>
+          <div class="landing-header">
+            <h1 class="camelCase">${welcomeMessage}</h1>
+            <h2>What are you in the mood for?</h2>
+          </div>
+          <div class="cards-block">
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <div class="card">
+                  <div class="card-block">
+                    <nav class="navbar navbar-light bg-faded">
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#eatDrink" aria-controls="eatDrink" aria-expanded="false" aria-label="Toggle navigation"><h4 class="card-title">Eating & Drinking</h4></button>
+                      <div class="collapse" id="eatDrink">
+                        <div class="text-muted p-1">
+                          <button id="resource" class="btn btn-secondary" data-id='restaurant'>Restaurant</button>
+                          <button id="resource" class="btn btn-secondary" data-id='bar'>Bar</button>
+                          <button id="resource" class="btn btn-secondary" data-id='cafe'>Cafe</button>
+                        </div>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="card">
+                  <div class="card-block">
+                    <nav class="navbar navbar-light bg-faded">
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nightOut" aria-controls="nightOut" aria-expanded="false" aria-label="Toggle navigation"><h4 class="card-title">Night Out</h4></button>
+                      <div class="collapse" id="nightOut">
+                        <div class="text-muted p-1">
+                          <button id="resource" class="btn btn-secondary" data-id='casino'>Casino</button>
+                          <button id="resource" class="btn btn-secondary" data-id='night_club'>Night Club</button>
+                          <button id="resource" class="btn btn-secondary" data-id='movie_theater'>Theater</button>
+                        </div>
+                      </div>
+                    </nav>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-                <div class="card-block">
-                  <h4 class="card-title">Night Out</h4>
-                  <button id="resource" class="btn btn-secondary" data-id='casino'>Casino</button>
-                  <button id="resource" class="btn btn-secondary" data-id='night_club'>Night Club</button>
-                  <button id="resource" class="btn btn-secondary" data-id='movie_theater'>Theater</button>
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <div class="card">
+                  <div class="card-block">
+                    <nav class="navbar navbar-light bg-faded">
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#shop" aria-controls="shop" aria-expanded="false" aria-label="Toggle navigation"><h4 class="card-title">Shopping</h4></button>
+                      <div class="collapse" id="shop">
+                        <div class="text-muted p-1">
+                          <button id="resource" class="btn btn-secondary" data-id='shopping_mall'>Shopping</button>
+                          <button id="resource" class="btn btn-secondary" data-id='clothing_store'>Clothes</button>
+                          <button id="resource" class="btn btn-secondary" data-id='florist'>Florist</button>
+                        </div>
+                      </div>
+                    </nav>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-                <div class="card-block">
-                  <h4 class="card-title">Shopping</h4>
-                  <button id="resource" class="btn btn-secondary" data-id='shopping_mall'>Shopping</button>
-                  <button id="resource" class="btn btn-secondary" data-id='clothing_store'>Clothes</button>
-                  <button id="resource" class="btn btn-secondary" data-id='florist'>Florist</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-                <div class="card-block">
-                  <h4 class="card-title">Day Out</h4>
-                  <button id="resource" class="btn btn-secondary" data-id='zoo'>Zoo</button>
-                  <button id="resource" class="btn btn-secondary" data-id='spa'>Spa</button>
-                  <button id="resource" class="btn btn-secondary" data-id='gym'>Gym</button>
+              <div class="col-md-6 col-sm-12">
+                <div class="card">
+                  <div class="card-block">
+                    <nav class="navbar navbar-light bg-faded">
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dayOut" aria-controls="dayOut" aria-expanded="false" aria-label="Toggle navigation"><h4 class="card-title">Day Out</h4></button>
+                      <div class="collapse" id="dayOut">
+                        <div class="text-muted p-1">
+                          <button id="resource" class="btn btn-secondary" data-id='zoo'>Zoo</button>
+                          <button id="resource" class="btn btn-secondary" data-id='spa'>Spa</button>
+                          <button id="resource" class="btn btn-secondary" data-id='gym'>Gym</button>
+                        </div>
+                      </div>
+                    </nav>
+                  </div>
                 </div>
               </div>
             </div>
